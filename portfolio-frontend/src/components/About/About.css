@@ -1,0 +1,52 @@
+.sobre-title {
+    height: 30vh;
+    letter-spacing: 0.3em;
+    font-size: 1.2em;
+    padding: 100px 0 70px 0;
+    text-align: center;
+}
+
+.summary {
+    margin: -30px auto 20px;
+    font-size: 0;
+}
+.sum {
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px auto 40px;
+    width: 33.33%;
+    padding: 0 40px;
+    font: 16px/34px courier new;
+    text-align: justify;
+}
+.sum h3 {
+    display: block;
+    margin: 0;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    text-align: center;
+    transition: .2s;
+    background-image: linear-gradient(to right, #0000001a 50%, #363636b3 100%);
+    background-position: 0 1.2em;
+    background-size: 0 10%;
+    background-repeat: no-repeat;
+    transition: background 1.2s;
+}
+    .sum h3:hover {
+        background-size: 100% 10%;
+    }
+
+@media only screen and (max-width: 859px){
+    .sobre-title{
+        height: 30vh;
+    }
+
+    .sum {
+        display: block;
+        width: auto;
+        max-width: 600px;
+        margin-bottom: 50px;
+        padding: 0 20px;
+    }
+}

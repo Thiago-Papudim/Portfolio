@@ -1,0 +1,101 @@
+header {
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    background-position: top;
+}
+
+.menu {
+    position: fixed;
+    background: none;
+    z-index: 1; 
+}
+    .menu-logo {
+        width: 4%;
+        border-radius: 100%;
+    }
+    .menu ul {
+        display: flex;
+        justify-content: space-around;
+        text-align: right;
+        padding: 1.5em;
+    }
+    .menu li {
+        list-style: none;
+    }
+    .menu a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        padding: 0.9em 1em;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .menu a:hover {
+        color: black;
+        text-shadow: 1px 1px black;
+        text-decoration: underline;
+    }
+
+    .site-title {
+        margin-top: 3em;
+    }
+
+    .soares {
+        background: black;
+        color: white;
+        text-decoration: none;
+        }
+
+        .soares:hover {
+            background: white;
+            color: black;
+            text-decoration: underline;
+        }
+
+    .title {
+        text-align: right;
+        padding: 0.3em;
+        font-family: 'Reenie Beanie', cursive;
+        margin-top: 6em;
+        font-size: 2em;
+        transform: scale(0.2) translateY(30vh);
+        opacity: 0;
+        animation: 1s linear 2s animacaoTitulo forwards;
+    }
+
+    @keyframes animacaoTitulo {
+        100% {
+            transform: scale(1) translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .logo {
+        width: 14%;
+        height: 27%;
+        margin: 9em 0.2em;
+        border: solid .1em;
+        border-radius: 3em;
+    }
+
+@media only screen and (max-width: 859px){
+    .menu {
+        position: absolute;
+    }
+    
+    .menu-logo{
+        display: none;
+    }
+
+    .logo{
+        width: auto;
+        position: absolute;
+        margin: 6.5em 4em;
+    }
+    
+    .title{
+        margin: auto;
+        text-align: center;
+    }
+}

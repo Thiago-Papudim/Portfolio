@@ -1,0 +1,110 @@
+.email {
+    background-size: 50px 30px;
+} 
+.email a {
+    display: table;
+    width: 300px;
+    height: 180px;
+    margin: 15px auto;
+    border-radius: 50%  no-repeat center 0;
+    background-size: 80px 80px;
+    letter-spacing: 0.05em;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.email a:hover {
+    text-decoration: none;
+    color: black;
+    opacity: 1;
+}
+.email span {
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -21px;
+    background: url(https://w7.pngwing.com/pngs/36/701/png-transparent-computer-icons-email-desktop-email-miscellaneous-angle-triangle-thumbnail.png) no-repeat center 0;
+    background-size: 40px;
+    width: 43px;
+    height: 40px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+} 
+.email a:hover span {
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+}    
+.email p {
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 110px;
+    left: 50px;
+    right: 50px;
+    color: black;
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+} 
+.email a:hover p {
+    opacity: 1;
+}
+
+.contato {
+height: 5vh;
+}    
+.contato-title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-size: 1.2em;
+    margin: 0 !important;
+    padding: 100px 0 70px 0;    
+}
+    
+.social {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 30%;
+}  
+    .social .icons {
+        height: 100px;
+        width: 100px;
+        margin: 1.5em;
+    }
+    .social a {
+        text-decoration: none;
+        font-size: 4em;
+        transition: text-shadow 1s;
+    }
+    .social a:hover {
+        text-decoration: none;
+        text-shadow: 0px 0px 10px red;
+    }
+
+.copy {
+    text-align: center;
+    padding: 1em;
+    font-size: .9em;
+}
+.copy a{
+    text-decoration: none;
+    color: black;
+}
+.copy a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 859px){
+    .social{
+        display: flex;
+        justify-content: center;
+    }  
+    .social .icons {
+        width: 80%;
+        margin: auto;
+    }
+}
