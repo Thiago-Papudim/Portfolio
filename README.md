@@ -1,6 +1,6 @@
 # Portfólio
 
-Portfólio with Vite + React and Django + DjangoRestFramework
+Portfólio with Vite + React and Django + DjangoRestFramework.
 
 ## Prerequisites
 
