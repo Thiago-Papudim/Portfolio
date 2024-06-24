@@ -1,23 +1,17 @@
-# Usar a imagem oficial do Node.js
-FROM node:18
+FROM node:18-alpine
 
-# Definir o diretório de trabalho
 WORKDIR /app
 
-# Copiar os arquivos de dependências
-COPY package*.json ./
+COPY package.json .
 
-# Instalar dependências
 RUN npm install
 
-# Instalar react-scripts globalmente para garantir a disponibilidade
-RUN npm install -g react-scripts
+RUN npm i -g serve
 
-# Copiar o restante do código da aplicação
 COPY . .
 
-# Construir a aplicação
 RUN npm run build
 
-# Rodar o servidor de desenvolvimento
-CMD ["npm", "start"]
+EXPOSE 3000
+
+CMD [ "serve", "-s", "dist" ]
