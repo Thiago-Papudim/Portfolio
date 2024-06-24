@@ -6,33 +6,19 @@ Portfólio with Vite + React and Django + DjangoRestFramework.
 
 ```
 GIT
-Python 3.12>
-Node.js
+Docker
 ```
 
 ## Quickstart
 
-1. Clone this project
+1. Clone this project:
 
    ```shell
    git clone https://github.com/Thiago-Papudim/Portfolio.git
    ```
 
-2. Install dependencies:
+2. Install dependencies and run:
 
    ```shell
-   cd Portfolio
-   pip install requirements.txt
-   cd portfolio-frontend
-   npm install
-   ```
-
-3. Run local dev server:
-
-   ```shell
-   npm run dev
-   cd ..
-   cd Portfolio-backend
-   python manage.py migrate
-   python manage.py runserver
+   docker-compose up --build``
    ```
