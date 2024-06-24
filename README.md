@@ -20,5 +20,5 @@ Docker
 2. Install dependencies and run:
 
    ```shell
-   docker-compose up --build``
+   docker-compose up --build
    ```
